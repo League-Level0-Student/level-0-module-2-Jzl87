@@ -13,7 +13,7 @@ public class IntroToRandom {
 		// Before you can make random numbers, you need a Random object. Random objects make random things.
 		// Random objects are created like this.
 		Random ran = new Random();
-		
+	
 		/*************  Random integers with no bounds  *************/
 		
 		// Run this program and you will see that nextInt created 5 random integers which have been printed to the console
@@ -30,13 +30,13 @@ public class IntroToRandom {
 		for (int i=0; i<5; i++) {
 			// Uncomment the line of code below, but replace the _____ with a positive integer (e.g. 100) before running the program			
 
-			// number = ran.nextInt(_____);
+			number = ran.nextInt(1000);
 			System.out.println(number);
 			
 		}
 		
 		// All the numbers printed by this loop are less then the number you added - AND POSITIVE
-		// This means, if you entered 100, all the numbers returned by nextInt are between 0 and 99 inclusive
+		// This means, if you entered 100, all the numbers returned by nextInt are between 0 and 999 inclusive
 
 		
 		/*************  Random integers with an upper and lower limit  *************/
@@ -48,8 +48,8 @@ public class IntroToRandom {
 			// Uncomment the line of code below, and replace (_____)  with   (highest value - lowest value + 1)
 			// For our example, this will be:  ( 75 - 25 + 1 )
 			// Also replace <lowest value> with the start of the range.  For our example, this is 25.
-			
-			// number = ran.nextInt(_____) + <lowest value>;
+			 
+			number = ran.nextInt( 75 - 25 + 1 ) + 25;
 			System.out.println(number);
 			
 		}
@@ -59,7 +59,15 @@ public class IntroToRandom {
 		/*************  Random integers with an upper and lower (negative) limit  *************/
 		
 		// Using the above example, generate 5 random numbers between -222 and 88
+		
+		//(Math.random() * (max - min)) + min
 
+		
+		for (int i=0; i<5; i++) {			 
+			number = ran.nextInt( 88  + 222 ) - 222 ;
+			System.out.println(number);
+			
+		}
 
 	}
 }

@@ -9,9 +9,10 @@ import java.util.Random;
 public class Magic8Ball {
 
 	// 1. Make a main method that includes all the steps below
-
+  public static void main(String[] args) {
 	// 2. Get the user to enter a question for the 8 ball to answer
-	
+	String ball;
+	JOptionPane.showInputDialog("Do you like kiwi");
 
 	// 3. Make a variable and initialize it to a random number.
 	//     ** You will need to make a random object!
@@ -33,5 +34,5 @@ public class Magic8Ball {
 	// 7. If the random number is 3
 
 	// -- write your own answer
-
+  }
 }

@@ -29,7 +29,12 @@ public class SafeCracker {
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */		
-
+		String crack = JOptionPane.showInputDialog("Crack the code?");
+			int guess = 0;
+		while(crack.equals("yes")) {
+			guess = guess + 1;
+			tryCode(guess);
+		}
 	}
 
 	 void tryCode(int guess) {

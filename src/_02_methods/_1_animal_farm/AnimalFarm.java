@@ -22,15 +22,29 @@ public class AnimalFarm {
 	public static void main(String[] args) {
 		new AnimalFarm().animals();
 	}
-	
 	void animals() {
 
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
+		 *   
 		*/			 
-			
+		String loop = JOptionPane.showInputDialog("Want to Play?");
+		while (loop.equals("yes")) {
+		String animal = JOptionPane.showInputDialog("what animal do you want?");
+		if (animal.equals("cow")) {
+			moo();
+		} else if (animal.equals("duck")) {
+			quack();
+		} else if (animal.equals("dog")) {
+			woof();
+		} else if (animal.equals("cat")) {
+			meow();
+		} else if (animal.equals("llama")) {
+			llamaScream();
+		} else { JOptionPane.showMessageDialog(null, "Your animal is not in catalog"); }
+		
 		/* 2. Make it so that the user can keep entering new animals. */
-
+		}
 	}
 
 	void moo() {

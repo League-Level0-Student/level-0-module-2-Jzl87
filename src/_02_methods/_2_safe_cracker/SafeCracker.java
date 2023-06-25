@@ -68,5 +68,5 @@ public class SafeCracker {
 		}
 	}
 
-	final int wekncrzpasfdkjhcfjse = new Random().nextInt(100);
+	final int wekncrzpasfdkjhcfjse = new Random().nextInt(9999999);
 }
